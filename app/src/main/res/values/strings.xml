@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jewel</string>
+    <string name="name">Name Jewel</string>
+    <string name="material">Material Jewel</string>
+    <string name="price">Price Jewel</string>
+    <string name="description">Description Jewel</string>
+</resources>
