@@ -96,9 +96,8 @@ public class JewelAdapter extends BaseAdapter {
         Jewel jewel = jewels.get(position);
 
         if (jewel != null) {
-            ((TextView) currentView.findViewById(R.id.name)).setText(jewel.getName());
-            ((TextView) currentView.findViewById(R.id.material)).setText(jewel.getMaterial());
-            ((TextView) currentView.findViewById(R.id.description)).setText(jewel.getDescription());
+            ((TextView) currentView.findViewById(R.id.item_title)).setText(jewel.getName());
+            ((TextView) currentView.findViewById(R.id.item_description)).setText(jewel.getDescription());
         }
 
         return currentView;

@@ -16,11 +16,6 @@ public class Jewel extends RealmObject {
     /**
      *
      */
-    private String material;
-
-    /**
-     *
-     */
     private float price;
 
     /**
@@ -42,22 +37,6 @@ public class Jewel extends RealmObject {
      */
     public void setName(String name) {
         this.name = name;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public String getMaterial() {
-        return material;
-    }
-
-    /**
-     *
-     * @param material
-     */
-    public void setMaterial(String material) {
-        this.material = material;
     }
 
     /**

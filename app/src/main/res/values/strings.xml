@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">Jewel</string>
+    <string name="app_name">Store Jewel</string>
     <string name="name">Name Jewel</string>
     <string name="material">Material Jewel</string>
     <string name="price">Price Jewel</string>
     <string name="description">Description Jewel</string>
+
+    <string name="hint_jewel_name">Name of jewel</string>
+    <string name="hint_jewel_price">Price of jewel</string>
+    <string name="hint_jewel_description">Description of jewel</string>
+
+    <string name="lorem_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
 </resources>
