@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#455A64</color>
-    <color name="colorPrimaryDark">#455A64</color>
-    <color name="colorAccent">#607D8B</color>
+    
 
-    <color name="item_selector">#607D8B</color>
-    <color name="list_divider">#BDBDBD</color>
-    <color name="item_primary_text">#FFFFFF</color>
-    <color name="item_secondary_text">#CFD8DC</color>
-    <color name="item_image">#455A64</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorLightPrimary">#B2DFDB</color>
+    <color name="colorIcons">#FFFFFF</color>
+
+    <color name="colorAccent">#009688</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
 
     <color name="bottom_content">#CFD8DC</color>
-
-    <color name="info_jewel_text">#455A64</color>
 
 </resources>

@@ -5,10 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jccg.jewel.R;
 import com.jccg.jewel.entities.Jewel;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -93,10 +96,10 @@ public class JewelAdapter extends BaseAdapter {
             currentView = inflater.inflate(R.layout.jewel_item_list, parent, false);
         }
 
-        Jewel jewel = jewels.get(position);
+        final Jewel jewel = jewels.get(position);
 
         if (jewel != null) {
-            ((TextView) currentView.findViewById(R.id.item_title)).setText(jewel.getName());
+            ((TextView) currentView.findViewById(R.id.item_name)).setText(jewel.getName());
             ((TextView) currentView.findViewById(R.id.item_description)).setText(jewel.getDescription());
         }
 

@@ -16,16 +16,16 @@
             android:id="@+id/list_jewel"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:divider="@color/list_divider"
+            android:divider="@color/colorDivider"
             android:dividerHeight="1dp"
-            android:listSelector="@color/item_selector" />
+            android:listSelector="@drawable/list_selector_item"/>
 
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
         app:layout_anchor="@id/linear_layout_main"
         app:layout_anchorGravity="bottom|end"
-        android:id="@+id/button_add_jewel"
+        android:id="@+id/add_jewel"
         android:clickable="true"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/floating_action_button_margin"

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Pearl Necklace",
+    "image": "jewel_diamond",
+    "price": 6000.00,
+    "description": "In 18k white gold with cultured pearls. Pearls, 7.5-8 mm. 34\" long."
+  },
+  {
+    "name": "Keys Oval key pendant",
+    "image": "jewel_pearls",
+    "price": 160.00,
+    "description": "Oval key pendant in sterling silver. Size small, 1.25\" long. Key and chain sold separately."
+  },
+  {
+    "name": "CT60",
+    "image": "jewel_watch",
+    "price": 6800.00,
+    "description": "Watch in stainless steel. Blue dial features gold poudré numerals. 40 mm case. Self-winding mechanical movement. Power reserve 40 hours. Water resistant to 100 meters/330 feet/10 ATM. Swiss-made."
+  },
+  {
+    "name": "Tiffany Infinity",
+    "image": "jewel_bracelet",
+    "price": 400.00,
+    "description": "Tiffany Infinity is a powerful symbol of continuous connection, energy and vitality. Here, a classic link bracelet is given a modern twist."
+  }
+]

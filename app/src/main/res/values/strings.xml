@@ -11,4 +11,10 @@
 
     <string name="lorem_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 
+    <array name="jewels">
+        <item>bracelet</item>
+        <item>diamond</item>
+        <item>watche</item>
+    </array>
+
 </resources>

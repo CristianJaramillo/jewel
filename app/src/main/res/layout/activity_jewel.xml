@@ -50,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_jewel_price"
-                    android:inputType="text"
+                    android:inputType="numberDecimal"
                     android:maxLength="25"/>
             </android.support.design.widget.TextInputLayout>
 
@@ -62,8 +62,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_jewel_description"
-                    android:inputType="text"
-                    android:maxLength="25"/>
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"/>
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -73,7 +73,7 @@
     <android.support.design.widget.FloatingActionButton
         app:layout_anchor="@id/linear_layout_content_top"
         app:layout_anchorGravity="bottom|right|end"
-        android:id="@+id/button_add_jewel"
+        android:id="@+id/change_jewel_image_button"
         android:clickable="true"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/floating_action_button_margin"
@@ -82,5 +82,14 @@
 
     </android.support.design.widget.FloatingActionButton>
 
+    <android.support.design.widget.FloatingActionButton
+        app:layout_anchor="@id/linear_layout_main"
+        app:layout_anchorGravity="bottom|end"
+        android:id="@+id/save_jewel_button"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/floating_action_button_margin"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_done_white_24dp"/>
 
 </android.support.design.widget.CoordinatorLayout>
