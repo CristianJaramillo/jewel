@@ -1,13 +1,14 @@
 package com.jccg.jewel;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.jccg.jewel.entities.Jewel;
 
 import io.realm.Realm;
@@ -41,12 +42,10 @@ public class JewelActivity extends AppCompatActivity implements View.OnClickList
     private Realm realm;
 
     /**
-     *
      * @param savedInstanceState
      */
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jewel);
@@ -57,17 +56,16 @@ public class JewelActivity extends AppCompatActivity implements View.OnClickList
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder().build();
         realm = Realm.getInstance(realmConfiguration);
 
-        editTextJewelName = (EditText) findViewById(R.id.edit_text_jewel_name);
-        editTextJewelPrice = (EditText) findViewById(R.id.edit_text_jewel_price);
-        editTextJewelDescription = (EditText) findViewById(R.id.edit_text_jewel_description);
+        editTextJewelName = findViewById(R.id.edit_text_jewel_name);
+        editTextJewelPrice = findViewById(R.id.edit_text_jewel_price);
+        editTextJewelDescription = findViewById(R.id.edit_text_jewel_description);
 
-        saveJewelButton = (FloatingActionButton) findViewById(R.id.save_jewel_button);
+        saveJewelButton = findViewById(R.id.save_jewel_button);
         saveJewelButton.setOnClickListener(this);
 
     }
 
     /**
-     *
      * @param item
      * @return
      */
@@ -95,14 +93,12 @@ public class JewelActivity extends AppCompatActivity implements View.OnClickList
      *
      */
     @Override
-    public void onDestroy()
-    {
+    public void onDestroy() {
         super.onDestroy();
         realm.close();
     }
 
     /**
-     *
      * @param v
      */
     @Override

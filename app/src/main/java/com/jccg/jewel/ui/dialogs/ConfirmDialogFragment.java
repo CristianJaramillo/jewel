@@ -1,20 +1,19 @@
 package com.jccg.jewel.ui.dialogs;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
 
 /**
- *
  * @author Cristian Jaramillo (cristian_gerar@hotmail.com)
  */
 public class ConfirmDialogFragment extends DialogFragment {
 
     /**
-     *
      * @param savedInstanceState
      * @return
      */

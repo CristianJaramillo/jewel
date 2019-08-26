@@ -2,13 +2,14 @@ package com.jccg.jewel;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.jccg.jewel.adapters.JewelAdapter;
 import com.jccg.jewel.entities.Jewel;
 
@@ -20,10 +21,9 @@ import io.realm.RealmConfiguration;
 import io.realm.internal.IOException;
 
 /**
- *
  * @author Cristian Jaramillo (cristian_gerar@hotmail.com)
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     /**
      *
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Realm realm;
 
     /**
-     *
      * @param savedInstanceState
      */
     @Override
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Realm.deleteRealm(realmConfiguration);
         realm = Realm.getInstance(realmConfiguration);
 
-        addJewelButton = (FloatingActionButton) findViewById(R.id.add_jewel);
+        addJewelButton = findViewById(R.id.add_jewel);
         addJewelButton.setOnClickListener(this);
 
     }
@@ -68,18 +67,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      *
      */
     @Override
-    public void onResume()
-    {
+    public void onResume() {
         super.onResume();
 
-        if(jewelAdapter == null)
-        {
+        if (jewelAdapter == null) {
 
             jewelAdapter = new JewelAdapter(this);
             jewelAdapter.setData(loadJewels());
             jewelAdapter.notifyDataSetChanged();
 
-            listView = (ListView) findViewById(R.id.list_jewel);
+            listView = findViewById(R.id.list_jewel);
             listView.setAdapter(jewelAdapter);
 
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -121,13 +118,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      *
      */
     @Override
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
         realm.close();
     }
 
     /**
-     *
      * @return
      */
     private List<Jewel> loadJewels() {
@@ -135,7 +131,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     *
      * @throws java.io.IOException
      */
     private void loadJsonFromStream() throws java.io.IOException {
@@ -159,7 +154,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     *
      * @param v
      */
     @Override
